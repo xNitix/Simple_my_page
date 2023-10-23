@@ -12,118 +12,133 @@ body {
     background-color: rgb(112, 107, 107);
 }
 
-.main_logo
-{
-    width:50%;
-    float: left;
-    font-size: 70px;
-}
+
 
 .ss
 {
     Clear: both;
 }
 
-#zegar
-{
-    float: left;
-    width:50%;
-    text-align: right;
-    font-size: 70px;
-}
+/* ################## ustawienie 1 #########################*/
 
-nav
-{
-    background-color: rgb(199, 111, 38);
-    text-align: center;
-}
-
-.stick
-{
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.menu
-{
-    list-style: none;
-    margin: 0;
-    padding: 10px;
-    font-size: 50px;
-    height: 100px;
-    line-height: 200%;
-    display: inline-block;
-}
-
-.menu > li
-{
-    float: left;
-    width: 400px;
-    border-right: 3px dashed rgb(243, 60, 4);
-}
-
-.menu > li:first-child
-{
-    border-left: 3px dashed rgb(243, 60, 4);
-}
-
-.menu a
-{
-    color : white;
-    text-decoration: none;
-}
-
-
-.menu > li:hover
-{
-    background-color: rgb(255, 231, 199);
-}
-
-.menu >li:hover > a
-{
-    color : rgb(253, 194, 0);
-    opacity: 0.5;
-}
-
-.menu > li > ul 
-{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: none;
-}
-
-.menu > li > ul > li
-{
-    background-color:rgb(216, 204, 169) ;
-    position: relative;
-    z-index: 100;
-    border-top: 3px dashed red;
-}
-
-.menu > li > ul > li:last-child
+@media (min-width: 300px) and (max-width: 1265px)
 {
 
-    border-bottom: 3px dashed red;
-}
+    nav
+    {
+        background-color: rgb(199, 111, 38);
+    }
 
-.menu > li > ul > li:hover
-{
-    background-color: rgb(163, 89, 29);
-}
+    .stick
+    {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
 
-.menu > li > ul > li:hover > a
-{
-    color : rgb(253, 255, 144);
-}
+    .but
+    {
 
-.menu > li:hover > ul
-{
-    display: block;
-}
+    }
 
-@media (min-width: 300px) and (max-width: 1265px){
+    #ukryj-pokaz {
+        display: none; 
+    }
+
+    .menu
+    {
+        list-style: none;
+        margin: 0;
+        padding: 10px;
+        font-size: 150%;
+        height: 100%;
+        line-height: 200%;
+        display: block;
+    }
+
+    .menu > li
+    {
+        width: 400px;
+        border-right: 3px dashed rgb(243, 60, 4);
+    }
+
+    .menu > li:first-child
+    {
+        border-left: 3px dashed rgb(243, 60, 4);
+    }
+
+    .menu a
+    {
+        color : white;
+        text-decoration: none;
+    }
+
+
+    .menu > li:hover
+    {
+        background-color: rgb(255, 231, 199);
+    }
+
+    .menu >li:hover > a
+    {
+        color : rgb(253, 194, 0);
+        opacity: 0.5;
+    }
+
+    .menu > li > ul 
+    {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: none;
+    }
+
+    .menu > li > ul > li
+    {
+        background-color:rgb(216, 204, 169) ;
+        position: relative;
+        z-index: 100;
+        border-top: 3px dashed red;
+    }
+
+    .menu > li > ul > li:last-child
+    {
+
+        border-bottom: 3px dashed red;
+    }
+
+    .menu > li > ul > li:hover
+    {
+        background-color: rgb(163, 89, 29);
+    }
+
+    .menu > li > ul > li:hover > a
+    {
+        color : rgb(253, 255, 144);
+    }
+
+    .menu > li:hover > ul
+    {
+        display: block;
+    }
+
+    .main_logo
+    {
+        margin: auto;
+        width:100%;
+        text-align: center;
+        font-size: 70px;
+    }
+
+
+    #zegar
+    {
+        margin: auto;
+        width:100%;
+        text-align: center;
+        font-size: 70px;
+    }
+
     .art
     {
     display: grid;
@@ -195,7 +210,125 @@ nav
 
 }
 
+/* ################## ustawienie 2 #########################*/
+
 @media (min-width: 1265px) {
+
+        nav
+    {
+        background-color: rgb(199, 111, 38);
+        text-align: center;
+    }
+
+    .stick
+    {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .but
+    {
+        display: none;
+    }
+    #ukryj-pokaz 
+    {
+    }
+
+
+    .menu
+    {
+        list-style: none;
+        margin: 0;
+        padding: 10px;
+        font-size: 50px;
+        height: 100px;
+        line-height: 200%;
+        display: inline-block;
+    }
+
+    .menu > li
+    {
+        float: left;
+        width: 400px;
+        border-right: 3px dashed rgb(243, 60, 4);
+    }
+
+    .menu > li:first-child
+    {
+        border-left: 3px dashed rgb(243, 60, 4);
+    }
+
+    .menu a
+    {
+        color : white;
+        text-decoration: none;
+    }
+
+
+    .menu > li:hover
+    {
+        background-color: rgb(255, 231, 199);
+    }
+
+    .menu >li:hover > a
+    {
+        color : rgb(253, 194, 0);
+        opacity: 0.5;
+    }
+
+    .menu > li > ul 
+    {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: none;
+    }
+
+    .menu > li > ul > li
+    {
+        background-color:rgb(216, 204, 169) ;
+        position: relative;
+        z-index: 100;
+        border-top: 3px dashed red;
+    }
+
+    .menu > li > ul > li:last-child
+    {
+
+        border-bottom: 3px dashed red;
+    }
+
+    .menu > li > ul > li:hover
+    {
+        background-color: rgb(163, 89, 29);
+    }
+
+    .menu > li > ul > li:hover > a
+    {
+        color : rgb(253, 255, 144);
+    }
+
+    .menu > li:hover > ul
+    {
+        display: block;
+    }
+
+    .main_logo
+    {
+        width:50%;
+        float: left;
+        font-size: 70px;
+    }
+
+    #zegar
+    {
+        float: left;
+        width:50%;
+        text-align: right;
+        font-size: 70px;
+    }
+
     .art
     {
     display: grid;

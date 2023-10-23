@@ -23,3 +23,12 @@
     setTimeout("clock()",1000);
  }
 //########################
+
+function button() {
+    var x = document.getElementById("ukryj-pokaz");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }

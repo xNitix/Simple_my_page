@@ -12,6 +12,30 @@
 </head>
 
 <body onload="clock();">
+    
+    <script>
+        function myFunction() {
+            // Sprawdź szerokość okna przeglądarki
+            if (window.innerWidth > 1265) {
+                var x = document.getElementById("ukryj-pokaz");
+                if (window.innerWidth > 1265) {
+                    if (x.style.display === "none") 
+                    {
+                        x.style.display = "block";
+                    }
+                }else
+                {
+                    x.style.display = "none";
+                }
+            }
+        }
+        window.addEventListener("resize", myFunction);
+
+        if (window.innerWidth > 1265) {
+            myFunction();
+        }
+    </script>
+
 
     <header>
         <div class="head_div">
@@ -34,8 +58,12 @@
 
     <div class="stick">
         <nav>
+            <button class="but" onclick="button()">
+                aaAAAAAAAAa
+            </button>
+            <div id="ukryj-pokaz">
                 <ul class="menu">
-                    <li><a href="#">My Hobby</a>
+                    <li >My Hobby
                         <ul>
                             <li><a href="#">GYM</a></li>
                             <li><a href="#">GRY</a></li>
@@ -48,7 +76,8 @@
                     <li><a href="#">Visited Country</a></li>
 
                 </ul>
-
+            </div>
+            <script src="main.js"></script>
         </nav>
     </div>
 

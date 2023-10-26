@@ -54,9 +54,9 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-menu-outline:before { content: '\e800'; font-size: 300%;} /* '' */
+.icon-menu-outline:before { content: '\e800'; font-size: 300%; color: aliceblue; } /* '' */
 .icon-globe:before { content: '\e801'; } /* '' */
-.icon-mail:before { content: '\e802'; } /* '' */
+.icon-mail:before { content: '\e802'; font-size:400%; margin: center; background-color: rgb(40, 128, 98);} /* '' */
 .icon-mail-1:before { content: '\e803'; } /* '' */
 .icon-trophy:before { content: '\e804'; } /* '' */
 .icon-emo-coffee:before { content: '\e808'; } /* '' */

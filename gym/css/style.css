@@ -294,16 +294,16 @@ body {
 
     .art
     {
-    display: grid;
-    grid-template-columns: repeat(2,minmax(0,1fr));
-    grid-template-rows: repeat(2,minmax(0,600px));
-    gap: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    top:0;
-    max-width: 1700px;
-    min-height: 100vh;
-    background-color: rgb(172, 157, 139);
+        display: grid;
+        grid-template-columns: repeat(2,minmax(0,1fr));
+        grid-template-rows: repeat(2,minmax(0,600px));
+        gap: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        top:0;
+        max-width: 1700px;
+        min-height: 100vh;
+        background-color: rgb(172, 157, 139);
     }
 
     .home_but

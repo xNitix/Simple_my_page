@@ -41,6 +41,7 @@ body {
     {
         background-color: rgb(190, 118, 66);
         border: 0;
+        cursor: pointer;
     }
 
     #ukryj-pokaz {
@@ -63,12 +64,16 @@ body {
         width: 400px;
     }
 
-    .menu a
-    {
-        color : white;
-        text-decoration: none;
+    .menu a {
+        color: white;
+        text-decoration: none; /* Usunięcie domyślnego podkreślenia linków */
+        display: block; /* Aby cała zawartość była klikalna */
     }
-
+    
+    .menu a:hover {
+        color : rgba(196, 130, 9, 0.966)!important;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    }
 
     .menu > li:hover
     {
@@ -269,10 +274,15 @@ body {
         border-left: 3px dashed rgb(243, 60, 4);
     }
 
-    .menu a
-    {
-        color : white;
-        text-decoration: none;
+    .menu a {
+        color: white;
+        text-decoration: none; /* Usunięcie domyślnego podkreślenia linków */
+        display: block; /* Aby cała zawartość była klikalna */
+    }
+    
+    .menu a:hover {
+        color : rgba(196, 130, 9, 0.966)!important;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     }
 
 

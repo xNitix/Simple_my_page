@@ -41,6 +41,7 @@ body {
     {
         background-color: rgb(190, 118, 66);
         border: 0;
+        cursor: pointer;
     }
 
     #ukryj-pokaz {
@@ -63,10 +64,15 @@ body {
         width: 400px;
     }
 
-    .menu a
-    {
-        color : white;
-        text-decoration: none;
+    .menu a {
+        color: white;
+        text-decoration: none; /* Usunięcie domyślnego podkreślenia linków */
+        display: block; /* Aby cała zawartość była klikalna */
+    }
+    
+    .menu a:hover {
+        color : rgba(196, 130, 9, 0.966)!important;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     }
 
 
@@ -260,6 +266,18 @@ body {
         text-align: center;
         font-size: 300%;
     }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 /* ################## ustawienie 2 #########################*/
@@ -301,6 +319,16 @@ body {
         line-height: 200%;
         display: inline-block;
     }
+    .menu a {
+        color: white;
+        text-decoration: none; /* Usunięcie domyślnego podkreślenia linków */
+        display: block; /* Aby cała zawartość była klikalna */
+    }
+    
+    .menu a:hover {
+        color : rgba(196, 130, 9, 0.966)!important;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    }
 
     .menu > li
     {
@@ -313,13 +341,6 @@ body {
     {
         border-left: 3px dashed rgb(243, 60, 4);
     }
-
-    .menu a
-    {
-        color : white;
-        text-decoration: none;
-    }
-
 
     .menu > li:hover
     {
@@ -512,6 +533,19 @@ body {
         margin-right: center;
         text-align: center;
         font-size: 300%;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
 }

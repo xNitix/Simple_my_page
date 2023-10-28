@@ -39,14 +39,17 @@ function button() {
 
   const image = document.getElementById("myImage1");
   const counter = document.getElementById("clickCounter1");
+  const overlay = document.getElementById("overlay");
 
   image.style.filter = "blur(100px)"; // Początkowe zamazanie
+  overlay.style.cursor = "pointer";
 
-  image.addEventListener("click", function() {
+  overlay.addEventListener("click", function() {
       clickCount++;
 
       if (clickCount >= clicksRequired) {
           image.style.filter = "none"; // Usuwa efekt zamazania po osiągnięciu wymaganej liczby kliknięć
+          overlay.style.display = "none";
           counter.innerHTML = "";
       } else {
           const blurAmount = (clicksRequired - clickCount) * 10;
@@ -63,14 +66,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const image = document.getElementById("myImage2");
   const counter = document.getElementById("clickCounter2");
+  const overlay = document.getElementById("overlay2");
 
   image.style.filter = "blur(100px)"; // Początkowe zamazanie
+  overlay.style.cursor = "pointer";
 
-  image.addEventListener("click", function() {
+  overlay.addEventListener("click", function() {
       clickCount++;
 
       if (clickCount >= clicksRequired) {
           image.style.filter = "none"; // Usuwa efekt zamazania po osiągnięciu wymaganej liczby kliknięć
+          overlay.style.display = "none";
           counter.innerHTML = "";
       } else {
           const blurAmount = (clicksRequired - clickCount) * 10;
@@ -87,14 +93,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const image = document.getElementById("myImage3");
   const counter = document.getElementById("clickCounter3");
+  const overlay = document.getElementById("overlay3");
 
   image.style.filter = "blur(100px)"; // Początkowe zamazanie
+  overlay.style.cursor = "pointer";
 
-  image.addEventListener("click", function() {
+ overlay.addEventListener("click", function() {
       clickCount++;
 
       if (clickCount >= clicksRequired) {
           image.style.filter = "none"; // Usuwa efekt zamazania po osiągnięciu wymaganej liczby kliknięć
+          overlay.style.display = "none";
           counter.innerHTML = "";
       } else {
           const blurAmount = (clicksRequired - clickCount) * 10;

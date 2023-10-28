@@ -148,7 +148,7 @@ body {
     margin-right: auto;
     top:0;
     max-width: 1700px;
-    min-height: 100vh;
+    min-height: 120vh;
     background-color: rgb(172, 157, 139);
     }
     
@@ -183,11 +183,12 @@ body {
     .card
     {
         width: 40%;
-        height:20% ;
+        height:250px ;
         display: inline-block;
         margin: 3px;
         background-image: url("jpg/mark.png");
         background-size: cover;
+        background-position: center;
         border:5px solid white;
         border-radius: 20px;
         cursor: pointer;
@@ -204,11 +205,12 @@ body {
     .cardA
     {
         width: 40%;
-        height:20%;
+        height:250px;
         display: inline-block;
         margin: 3px;
         background-image: url("jpg/mark.png");
         background-size: cover;
+        background-position: center;
         border:5px solid rgb(199, 117, 69);
         border-radius: 20px;
         cursor: default;
@@ -228,10 +230,10 @@ body {
         text-align: center;
     }
 
-    .win > h1
+    .zdj-block > h1
     {
         text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5);
-        font-size: 400%;
+        font-size: 100%;
     }
 
     .zdj-block
@@ -406,7 +408,7 @@ body {
         margin-right: auto;
         top:0;
         max-width: 1700px;
-        min-height: 100vh;
+        min-height: 120vh;
         background-color: rgb(172, 157, 139);
     }
 
@@ -421,6 +423,7 @@ body {
         border-radius: 5px; /* zaokrąglenie narożników */
         text-decoration: none; /* usunięcie domyślnego podkreślenia linku */
         background-color: rgb(40, 128, 98);
+        z-index: 999;
     }
     
     .board
@@ -440,11 +443,12 @@ body {
 
     .card
     {
-        width: 22%;
-        height:25%;
+        width: 20%;
+        height:300px;
         display: inline-block;
         margin: 3px;
         background-image: url("jpg/mark.png");
+        background-position: center;
         background-size: cover;
         border:5px solid white;
         border-radius: 20px;
@@ -461,8 +465,8 @@ body {
 
     .cardA
     {
-        width: 22%;
-        height:25%;
+        width: 20%;
+        height:300px;
         display: inline-block;
         margin: 3px;
         background-image: url("jpg/mark.png");
@@ -481,7 +485,7 @@ body {
         margin-right: auto;
         top:0;
         max-width: 1700px;
-        min-height: 100vh;
+        min-height: 120vh;
         background-color: rgb(172, 157, 139);
         text-align: center;
     }
@@ -494,7 +498,6 @@ body {
 
     .zdj-block
     {
-        margin-top: 2%;
         width:100%;
         margin-left: auto;
         margin-right: auto;

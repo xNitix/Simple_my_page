@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
       else
       {
-        if(cards[visible_nr] == cards[nr])
+        if(cards[visible_nr] == cards[nr] && visible_nr != nr)
         {
           setTimeout(function() {hide2cards(nr, visible_nr)},700);
         }

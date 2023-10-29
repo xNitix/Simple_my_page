@@ -199,29 +199,33 @@ body {
         cursor: pointer;
     }
   
-      /* Styl dla okienka z filmem */
     .video-popup {
         display: none;
         position: fixed;
         top: 50%; /* Środek ekranu w pionie */
         left: 50%; /* Środek ekranu w poziomie */
         transform: translate(-50%, -50%);
-        max-width: 90%; /* Maksymalna szerokość okienka z filmem */
-        max-height: 90%; /* Maksymalna wysokość okienka z filmem */
-        background-color: white;
-        border: 1px solid #ccc;
+        max-width: 90%; 
+        max-height: 90%; 
+        background-color: rgb(187, 176, 160);
+        border: 3px solid rgb(199, 111, 38);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 3%;
         padding: 10px;
         overflow: auto;
     }
   
-      /* Przycisk zamknięcia dla okienka z filmem */
+
     .close-button {
+        font-family: 'Josefin Sans', sans-serif;
         position: absolute;
         top: 10px;
         right: 10px;
         cursor: pointer;
+        border: 2px solid #ffffff;
+        background-color: rgb(199, 111, 38);
     }
+    
 }
 
 /* ################## ustawienie 2 #########################*/

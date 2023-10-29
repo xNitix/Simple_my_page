@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Page</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <link rel="icon" type="img/x-icon" href="jpg/favicon.ico"> 
+    <link rel="stylesheet" href="skills/css/style.css" type="text/css" /> <!-- css -->
+    <link rel="stylesheet" href="fontello/css/fontello.css" type="text/css" />
+    <script type="text/javascript" src="jq/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="skills/js/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,600;1,100&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="clock();">
+    
+    <script>
+        function myFunction() {
+            // Sprawdź szerokość okna przeglądarki
+            if (window.innerWidth >= 1265) {
+                var x = document.getElementById("ukryj-pokaz");
+                if (window.innerWidth > 1265) {
+                    if (x.style.display === "none") 
+                    {
+                        x.style.display = "block";
+                    }
+                }else
+                {
+                    x.style.display = "none";
+                }
+            }
+        }
+        window.addEventListener("resize", myFunction);
+
+        if (window.innerWidth > 1265) {
+            myFunction();
+        }
+    </script>
+
+
+    <header>
+        <div class="head_div">
+            <div class="main_logo">
+                Skills<i class="icon-trophy"></i>
+            </div>
+
+            <div id="zegar">
+
+            </div>
+
+            <div class="ss">
+                
+            </div>
+        </div>
+        
+        
+    </header>
+
+
+    <div class="stick">
+        <nav>
+            <button class="but" onclick="button()">
+                <i class="icon-menu-outline"></i>
+            </button>
+            <div id="ukryj-pokaz">
+                <ul class="menu">
+                    <li >My Hobbies
+                        <ul>
+                            <li><a href="gym.html">Gym</a></li>
+                            <li><a href="games.html">Games</a></li>
+                            <li>Skills</li>
+                        </ul>
+                    </li>
+
+                    <li><a href="city.html">My City</a></li>
+
+                    <li><a href="country.html">Visited Countries</a></li>
+
+                </ul>
+            </div>
+            <script src="main.js"></script>
+        </nav>
+    </div>
+
+
+    <main>
+        <article>
+
+            <div class="art">
+                <a href="index.html" class="home_but">
+                    <i class="icon-mail"></i>
+                </a>
+
+                <div class ="board">
+                    <h1>Znajdź umiejętności :</h1>
+                    <div class="card" id="c0" onclick="revealCard(0)">
+
+                    </div>
+                    <div class="card" id="c1">
+
+                    </div>
+                    <div class="card" id="c2"></div>
+                    <div class="card" id="c3"></div>
+                    <div class="card" id="c4"></div>
+                    <div class="card" id="c5"></div>
+                    <div class="card" id="c6"></div>
+                    <div class="card" id="c7"></div>
+                </div>
+
+            </div>
+
+            <div class="win">
+                <a href="index.html" class="home_but">
+                    <i class="icon-mail"></i>
+                </a>
+                <div class="zdj-block">
+                    <h1>Moje umiejętności :</h1>
+                    <div class="zdj-skill" >
+                        <img src="jpg/roller.png">
+                    </div>
+                    <div class="zdj-skill" >
+                        <img src="jpg/skates.png">
+                    </div>
+                    <div class="zdj-skill">
+                        <img src="jpg/skis.png">
+                    </div>
+                    <div class="zdj-skill">
+                        <img src="jpg/keyboard.png">
+                    </div>
+                </div>
+                
+            </div>
+
+        </article>
+
+    </main>
+
+    <footer>
+            <div class="foot">
+                2023 &copy; Norbert Dziwak - My Page; dziwakdawid@gmail.com
+            </div>
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,545 @@
+body {
+    margin: 0;
+    background-color: rgb(187, 176, 160);
+    color : white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.head_div
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0;
+    width: 100%;
+    background-color: rgb(112, 107, 107);
+}
+
+.ss
+{
+    Clear: both;
+}
+
+/* ################## ustawienie 1 #########################*/
+
+@media (min-width: 10px) and (max-width: 1265px)
+{
+
+    nav
+    {
+        background-color: rgb(199, 111, 38);
+        font-family: 'Lato', sans-serif;
+    }
+
+    .stick
+    {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .but
+    {
+        background-color: rgb(190, 118, 66);
+        border: 0;
+        cursor: pointer;
+    }
+
+    #ukryj-pokaz {
+        display: none; 
+    }
+
+    .menu
+    {
+        list-style: none;
+        margin: 0;
+        padding: 10px;
+        font-size: 150%;
+        height: 100%;
+        line-height: 200%;
+        display: block;
+    }
+
+    .menu > li
+    {
+        width: 400px;
+    }
+
+    .menu a {
+        color: white;
+        text-decoration: none; /* Usunięcie domyślnego podkreślenia linków */
+        display: block; /* Aby cała zawartość była klikalna */
+    }
+    
+    .menu a:hover {
+        color : rgba(196, 130, 9, 0.966)!important;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    }
+
+    .menu > li:hover
+    {
+        background-color: rgb(255, 231, 199);
+    }
+
+    .menu >li:hover > a
+    {
+        color : rgb(253, 194, 0);
+        opacity: 0.5;
+    }
+
+    .menu > li > ul 
+    {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: none;
+    }
+
+    .menu > li > ul > li
+    {
+        background-color:rgb(216, 204, 169) ;
+        position: relative;
+        z-index: 100;
+        border-top: 3px dashed red;
+    }
+
+    .menu > li > ul > li:last-child
+    {
+
+        border-bottom: 3px dashed red;
+    }
+
+    .menu > li > ul > li:hover
+    {
+        background-color: rgb(163, 89, 29);
+    }
+
+    .menu > li > ul > li:hover > a
+    {
+        color : rgb(253, 255, 144);
+    }
+
+    .menu > li:hover > ul
+    {
+        display: block;
+    }
+
+    .main_logo
+    {
+        margin: auto;
+        width:100%;
+        text-align: center;
+        font-size: 70px;
+        font-family: 'Josefin Sans', sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+
+    #zegar
+    {
+        margin: auto;
+        width:100%;
+        text-align: center;
+        font-size: 70px;
+        font-family: 'Josefin Sans', sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .art
+    {
+    flex: 1;
+    display: grid;
+    gap: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    top:0;
+    max-width: 1700px;
+    min-height: 120vh;
+    background-color: rgb(172, 157, 139);
+    }
+    
+    .home_but
+    {
+        position: fixed;
+        bottom: 20px; /* odległość od dolnej krawędzi ekranu */
+        right: 20px; /* odległość od prawej krawędzi ekranu */
+        color: #fff;
+        padding: 10px 20px; /* wewnętrzne marginesy przycisku */
+        border: none;
+        border-radius: 5px; /* zaokrąglenie narożników */
+        text-decoration: none; /* usunięcie domyślnego podkreślenia linku */
+        background-color: rgb(40, 128, 98);
+        z-index: 999;
+    }
+    .board
+    {
+        margin-top: 2%;
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .board > h1
+    {
+        text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-size: 300%;
+    }
+
+    .card
+    {
+        width: 40%;
+        height:250px ;
+        display: inline-block;
+        margin: 3px;
+        background-image: url("jpg/mark.png");
+        background-size: cover;
+        background-position: center;
+        border:5px solid white;
+        border-radius: 20px;
+        cursor: pointer;
+        filter: brightness(80%);
+        transition: all .3s ease-in-out;
+    }
+
+    .card:hover
+    {
+        border:5px solid rgb(199, 117, 69);
+        filter: brightness(100%);
+    }
+
+    .cardA
+    {
+        width: 40%;
+        height:250px;
+        display: inline-block;
+        margin: 3px;
+        background-image: url("jpg/mark.png");
+        background-size: cover;
+        background-position: center;
+        border:5px solid rgb(199, 117, 69);
+        border-radius: 20px;
+        cursor: default;
+        filter: brightness(100%);
+        transition: all .3s ease-in-out;
+    }
+
+    .win
+    {
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        top:0;
+        max-width: 1700px;
+        min-height: 100vh;
+        background-color: rgb(172, 157, 139);
+        text-align: center;
+    }
+
+    .zdj-block > h1
+    {
+        text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-size: 100%;
+    }
+
+    .zdj-block
+    {
+        margin-top: 2%;
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-size: 300%;
+    }
+    .zdj-skill{
+        display: inline-block;
+        width:45%;
+    }
+
+    .zdj-skill > img
+    {
+        border:5px solid rgb(199, 117, 69);
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .foot
+    {
+        margin: auto;
+        width: 100%;
+        height: 60px;
+        background-color: rgb(116, 70, 18);
+        text-align: center;
+        font-size: 150%;
+    }
+
+
+
+}
+
+/* ################## ustawienie 2 #########################*/
+
+@media (min-width: 1265px) {
+
+        nav
+    {
+        margin: 0;
+        background-color: rgb(199, 111, 38);
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .stick
+    {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .but
+    {
+        display: none;
+    }
+    #ukryj-pokaz 
+    {
+    }
+
+
+    .menu
+    {
+        margin: 0;
+        list-style: none;
+        margin: 0;
+        padding: 10px;
+        font-size: 50px;
+        height: 100px;
+        line-height: 200%;
+        display: inline-block;
+    }
+    .menu a {
+        color: white;
+        text-decoration: none; /* Usunięcie domyślnego podkreślenia linków */
+        display: block; /* Aby cała zawartość była klikalna */
+    }
+    
+    .menu a:hover {
+        color : rgba(196, 130, 9, 0.966)!important;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    }
+    
+
+    .menu > li
+    {
+        float: left;
+        width: 400px;
+        border-right: 3px dashed rgb(243, 60, 4);
+    }
+
+    .menu > li:first-child
+    {
+        border-left: 3px dashed rgb(243, 60, 4);
+    }
+
+    .menu > li:hover
+    {
+        background-color: rgb(255, 231, 199);
+    }
+
+    .menu >li:hover > a
+    {
+        color : rgb(253, 194, 0);
+        opacity: 0.5;
+    }
+
+    .menu > li > ul 
+    {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: none;
+    }
+
+    .menu > li > ul > li
+    {
+        background-color:rgb(216, 204, 169) ;
+        position: relative;
+        z-index: 100;
+        border-top: 3px dashed red;
+    }
+
+    .menu > li > ul > li:last-child
+    {
+
+        border-bottom: 3px dashed red;
+    }
+
+    .menu > li > ul > li:hover
+    {
+        background-color: rgb(163, 89, 29);
+    }
+
+    .menu > li > ul > li:hover > a
+    {
+        color : rgb(253, 255, 144);
+    }
+
+    .menu > li:hover > ul
+    {
+        display: block;
+    }
+
+    .main_logo
+    {
+        width:50%;
+        float: left;
+        font-size: 70px;
+        text-indent: 40px;
+        font-family: 'Josefin Sans', sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        padding-top: 10px;
+    }
+
+    #zegar
+    {
+        float: left;
+        width:48%;
+        text-align: right;
+        font-size: 70px;
+        padding-right: 20px;
+        font-family: 'Josefin Sans', sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        padding-top: 15px;
+
+    }
+
+    .art
+    {
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        top:0;
+        max-width: 1700px;
+        min-height: 120vh;
+        background-color: rgb(172, 157, 139);
+    }
+
+    .home_but
+    {
+        position: fixed;
+        bottom: 20px; /* odległość od dolnej krawędzi ekranu */
+        right: 20px; /* odległość od prawej krawędzi ekranu */
+        color: #fff; 
+        padding: 10px 20px; /* wewnętrzne marginesy przycisku */
+        border: none;
+        border-radius: 5px; /* zaokrąglenie narożników */
+        text-decoration: none; /* usunięcie domyślnego podkreślenia linku */
+        background-color: rgb(40, 128, 98);
+        z-index: 999;
+    }
+    
+    .board
+    {
+        margin-top: 2%;
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 400%;
+    }
+
+    .board > h1
+    {
+        text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .card
+    {
+        width: 20%;
+        height:300px;
+        display: inline-block;
+        margin: 3px;
+        background-image: url("jpg/mark.png");
+        background-position: center;
+        background-size: cover;
+        border:5px solid white;
+        border-radius: 20px;
+        cursor: pointer;
+        filter: brightness(80%);
+        transition: all .3s ease-in-out;
+    }
+
+    .card:hover
+    {
+        border:5px solid rgb(199, 117, 69);
+        filter: brightness(100%);
+    }
+
+    .cardA
+    {
+        width: 20%;
+        height:300px;
+        display: inline-block;
+        margin: 3px;
+        background-image: url("jpg/mark.png");
+        background-size: cover;
+        border:5px solid rgb(199, 117, 69);
+        border-radius: 20px;
+        cursor: default;
+        filter: brightness(100%);
+        transition: all .3s ease-in-out;
+    }
+
+    .win
+    {
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        top:0;
+        max-width: 1700px;
+        min-height: 120vh;
+        background-color: rgb(172, 157, 139);
+        text-align: center;
+    }
+
+    .win > h1
+    {
+        text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-size: 400%;
+    }
+
+    .zdj-block
+    {
+        width:100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-size: 400%;
+    }
+    .zdj-skill{
+        display: inline-block;
+        width:23%;
+    }
+
+    .zdj-skill > img
+    {
+        border:5px solid rgb(199, 117, 69);
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .foot
+    {
+        margin: auto;
+        width: 100%;
+        height: 60px;
+        background-color: rgb(116, 70, 18);
+        text-align: center;
+        font-size: 150%;
+    }
+
+    
+}
+

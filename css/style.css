@@ -1,4 +1,5 @@
 body {
+    margin:0;
     background-color: rgb(187, 176, 160);
     color : white;
     min-height: 100vh;
@@ -22,7 +23,7 @@ body {
 
 /* ################## ustawienie 1 #########################*/
 
-@media (min-width: 300px) and (max-width: 1265px)
+@media (min-width: 10px) and (max-width: 1265px)
 {
 
     nav
@@ -42,6 +43,7 @@ body {
     {
         background-color: rgb(190, 118, 66);
         border: 0;
+        cursor: pointer;
     }
 
     #ukryj-pokaz {
@@ -64,12 +66,16 @@ body {
         width: 400px;
     }
 
-    .menu a
-    {
-        color : white;
-        text-decoration: none;
+    .menu a {
+        color: white;
+        text-decoration: none; /* Usunięcie domyślnego podkreślenia linków */
+        display: block; /* Aby cała zawartość była klikalna */
     }
-
+    
+    .menu a:hover {
+        color : rgba(196, 130, 9, 0.966)!important;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    }
 
     .menu > li:hover
     {
@@ -124,8 +130,9 @@ body {
         margin: auto;
         width:100%;
         text-align: center;
-        font-size: 70px;
+        font-size: 300%;
         font-family: 'Josefin Sans', sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
 
@@ -134,8 +141,9 @@ body {
         margin: auto;
         width:100%;
         text-align: center;
-        font-size: 70px;
+        font-size: 270%;
         font-family: 'Josefin Sans', sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
     .art
@@ -166,17 +174,21 @@ body {
     {
         font-family: 'Lato', sans-serif;
         padding: 30px;
-        font-size: 170%;
+        font-size: 190%;
     }
 
     .text h1
     {
         text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
     .text p
     {
         text-align: center;
+        font-size: 120%;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        font-family: 'Josefin Sans', sans-serif;
     }
 
     .linki
@@ -205,12 +217,69 @@ body {
     }
     .form
     {
+        margin-left: 8%;
+        margin-bottom: 70px;
         font-family: 'Lato', sans-serif;
-        width: 100%;
-        height: 400px;
-        border:2px solid red;
+        width: 80%;
+        height: 85%;
+        border:3px solid rgb(190, 118, 66);
+        border-radius:3%;
+        background-color: rgb(187, 176, 160); 
+        font-size: 100;
         
     }
+
+    .dane {
+        font-style: italic;
+        float: left;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .opcje
+    {
+        margin-top: 2.5%;
+        margin-left: 5%;
+        float: left;
+        width: 40%;
+    }
+    
+    .form-group {
+        margin-top: 1% ;
+        margin-left: 4%;
+    }
+
+    .email
+    {
+        margin-top: 2%;
+        margin-left: 4%;
+    }
+
+    .wia
+    {
+        width: 190%;
+        margin-top: 1% ;
+        margin-left: 4%;
+    }
+
+    #wi{
+        width: 100%;
+        max-width: 650px; 
+        height: 60px; 
+    }
+
+    .bu input[type="submit"]
+    {
+        font-family: 'Lato', sans-serif;
+        color:white;
+        background-color: rgb(112, 107, 107);
+        width: 30%;
+        margin-top: 1% ;
+        margin-left: 4%; 
+        border-radius: 5px; /
+    }
+
 
     .icon-whatsapp
     {
@@ -278,12 +347,16 @@ body {
         border-left: 3px dashed rgb(243, 60, 4);
     }
 
-    .menu a
-    {
-        color : white;
-        text-decoration: none;
+    .menu a {
+        color: white;
+        text-decoration: none; /* Usunięcie domyślnego podkreślenia linków */
+        display: block;
     }
-
+    
+    .menu a:hover {
+        color : rgba(196, 130, 9, 0.966)!important;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    }
 
     .menu > li:hover
     {
@@ -341,6 +414,7 @@ body {
         text-indent: 40px;
         font-family: 'Josefin Sans', sans-serif;
         padding-top: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
     #zegar
@@ -352,6 +426,7 @@ body {
         padding-right: 20px;
         font-family: 'Josefin Sans', sans-serif;
         padding-top: 15px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
     }
 
@@ -385,18 +460,22 @@ body {
     .text
     {
         padding: 30px;
-        font-size: 170%;
+        font-size: 180%;
         font-family: 'Lato', sans-serif;
     }
 
     .text h1
     {
         text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
     .text p
     {
         text-align: center;
+        font-size: 120%;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        font-family: 'Josefin Sans', sans-serif;
     }
 
     .linki
@@ -425,12 +504,70 @@ body {
     }
     .form
     {
+        margin-left: 8%;
         font-family: 'Lato', sans-serif;
-        width: 100%;
+        width: 80%;
         height: 50%;
-        border:2px solid red;
+        border:3px solid rgb(190, 118, 66);
+        border-radius:3%;
+        background-color: rgb(187, 176, 160); 
+        font-size: 100;
         
     }
+
+    .dane {
+        font-style: italic;
+        float: left;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .opcje
+    {
+        margin-top: 2.5%;
+        margin-left: 5%;
+        float: left;
+        width: 40%;
+    }
+    
+    .form-group {
+        margin-top: 1% ;
+        margin-left: 4%;
+    }
+
+    .email
+    {
+        margin-top: 2%;
+        margin-left: 4%;
+    }
+
+    .wia
+    {
+        width: 190%;
+        margin-top: 1% ;
+        margin-left: 4%;
+    }
+
+    #wi{
+        width: 100%;
+        max-width: 650px; 
+        height: 60px; 
+    }
+
+    .bu input[type="submit"]
+    {
+        font-family: 'Lato', sans-serif;
+        color:white;
+        background-color: rgb(112, 107, 107);
+        width: 30%;
+        margin-top: 1% ;
+        margin-left: 4%; 
+        border-radius: 5px; /
+    }
+
+
+
 
 }
 

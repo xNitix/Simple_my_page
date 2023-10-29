@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Page</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <link rel="icon" type="img/x-icon" href="jpg/favicon.ico"> 
+    <link rel="stylesheet" href="country/css/style.css" type="text/css" /> <!-- css -->
+    <link rel="stylesheet" href="fontello/css/fontello.css" type="text/css" />
+    <script type="text/javascript" src="country/js/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,600;1,100&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="clock();">
+    
+    <script>
+        function myFunction() {
+            // Sprawdź szerokość okna przeglądarki
+            if (window.innerWidth >= 1265) {
+                var x = document.getElementById("ukryj-pokaz");
+                if (window.innerWidth > 1265) {
+                    if (x.style.display === "none") 
+                    {
+                        x.style.display = "block";
+                    }
+                }else
+                {
+                    x.style.display = "none";
+                }
+            }
+        }
+        window.addEventListener("resize", myFunction);
+
+        if (window.innerWidth > 1265) {
+            myFunction();
+        }
+    </script>
+
+
+    <header>
+        <div class="head_div">
+            <div class="main_logo">
+                Countries<i class="icon-globe"></i>
+            </div>
+
+            <div id="zegar">
+
+            </div>
+
+            <div class="ss">
+                
+            </div>
+        </div>
+        
+        
+    </header>
+
+
+    <div class="stick">
+        <nav>
+            <button class="but" onclick="button()">
+                <i class="icon-menu-outline"></i>
+            </button>
+            <div id="ukryj-pokaz">
+                <ul class="menu">
+                    <li >My Hobbies
+                        <ul>
+                            <li><a href="gym.html">Gym</a></li>
+                            <li><a href="games.html">Games</a></li>
+                            <li><a href="skills.html">Skills</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="city.html">My City</a></li>
+
+                    <li>Visited Countries</li>
+
+                </ul>
+            </div>
+            <script src="main.js"></script>
+        </nav>
+    </div>
+
+
+    <main>
+        <a href="index.html" class="home_but">
+            <i class="icon-mail"></i>
+        </a>
+        <div class="art">
+            <div class="map">
+                <img src="jpg/map.jpg">
+                <div class="pin" style="top: 52.5%; left: 46.5%;" data-video="jpg/Movie001.mp4"></div>
+                <div class="pin" style="top: 39%; left: 20%;" data-video="jpg/Movie002.mp4"></div>
+                <div class="pin" style="top: 97%; left: 65%;" data-video="jpg/Movie006.mp4"></div>
+                <div class="pin" style="top: 94%; left: 71%;" data-video="jpg/Movie004.mp4"></div>
+                <div class="pin" style="top: 76.5%; left: 39.7%;" data-video="jpg/Movie005.mp4"></div>
+                <div class="pin" style="top: 45%; left: 52%;" data-video="jpg/Movie003.mp4"></div>
+            </div>
+
+
+            <div class="video-popup">
+                <span class="close-button">Zamknij</span>
+                <iframe width="560" height="315" frameborder="0" allowfullscreen></iframe>
+              </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+            <div class="foot">
+                2023 &copy; Norbert Dziwak - My Page; dziwakdawid@gmail.com
+            </div>
+    </footer>
+
+
+</body>
+</html>

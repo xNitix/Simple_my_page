@@ -2,6 +2,7 @@ body {
     background-color: rgb(187, 176, 160);
     color : white;
     min-height: 100vh;
+    margin:0px;
 }
 
 .head_div
@@ -20,7 +21,7 @@ body {
 
 /* ################## ustawienie 1 #########################*/
 
-@media (min-width: 300px) and (max-width: 1265px)
+@media (min-width: 10px) and (max-width: 1265px)
 {
 
     nav
@@ -40,6 +41,7 @@ body {
     {
         background-color: rgb(190, 118, 66);
         border: 0;
+        cursor: pointer;
     }
 
     #ukryj-pokaz {
@@ -62,10 +64,15 @@ body {
         width: 400px;
     }
 
-    .menu a
-    {
-        color : white;
-        text-decoration: none;
+    .menu a {
+        color: white;
+        text-decoration: none; /* Usunięcie domyślnego podkreślenia linków */
+        display: block; /* Aby cała zawartość była klikalna */
+    }
+    
+    .menu a:hover {
+        color : rgba(196, 130, 9, 0.966)!important;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     }
 
 
@@ -124,6 +131,7 @@ body {
         text-align: center;
         font-size: 70px;
         font-family: 'Josefin Sans', sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
 
@@ -134,6 +142,7 @@ body {
         text-align: center;
         font-size: 70px;
         font-family: 'Josefin Sans', sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
     .art
@@ -159,8 +168,118 @@ body {
         border-radius: 5px; /* zaokrąglenie narożników */
         text-decoration: none; /* usunięcie domyślnego podkreślenia linku */
         background-color: rgb(40, 128, 98);
+        z-index: 9999;
     }
 
+    /* ###########1####### */
+    .image-container1 {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    
+    #myImage1 {
+        width: 100%;
+        height: auto;
+        transition: filter 0.3s;
+    }
+    
+    #clickCounter1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        font-size: 150%;
+    }
+
+/* ###########2####### */
+    .image-container2 {
+        border-radius: 10px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    #myImage2 {
+        width: 100%;
+        height: auto;
+        transition: filter 0.3s;
+    }
+    
+    #clickCounter2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        font-size: 150%;
+    }
+
+    /* ###########3####### */
+
+    .image-container3 {
+        border-radius: 10px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 2%;
+    }
+    
+    #myImage3 {
+        width: 100%;
+        height: auto;
+        transition: filter 0.3s;
+    }
+    
+    #clickCounter3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        font-size: 150%;
+    }
+
+
+    .art > h1
+    {
+        transform: skew(4deg, 0); /* Pochylenie o 4 stopnie */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        margin-left: center;
+        margin-right: center;
+        text-align: center;
+        font-size: 380%;
+    }
+
+    .art > p
+    {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-family: 'Josefin Sans', sans-serif;
+        margin-left: center;
+        margin-right: center;
+        text-align: center;
+        font-size: 300%;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 }
 
 /* ################## ustawienie 2 #########################*/
@@ -202,6 +321,16 @@ body {
         line-height: 200%;
         display: inline-block;
     }
+    .menu a {
+        color: white;
+        text-decoration: none; /* Usunięcie domyślnego podkreślenia linków */
+        display: block; /* Aby cała zawartość była klikalna */
+    }
+    
+    .menu a:hover {
+        color : rgba(196, 130, 9, 0.966)!important;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    }
 
     .menu > li
     {
@@ -214,13 +343,6 @@ body {
     {
         border-left: 3px dashed rgb(243, 60, 4);
     }
-
-    .menu a
-    {
-        color : white;
-        text-decoration: none;
-    }
-
 
     .menu > li:hover
     {
@@ -277,6 +399,7 @@ body {
         font-size: 70px;
         text-indent: 40px;
         font-family: 'Josefin Sans', sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         padding-top: 10px;
     }
 
@@ -288,22 +411,20 @@ body {
         font-size: 70px;
         padding-right: 20px;
         font-family: 'Josefin Sans', sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         padding-top: 15px;
 
     }
 
     .art
     {
-    display: grid;
-    grid-template-columns: repeat(2,minmax(0,1fr));
-    grid-template-rows: repeat(2,minmax(0,600px));
-    gap: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    top:0;
-    max-width: 1700px;
-    min-height: 100vh;
-    background-color: rgb(172, 157, 139);
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        top:0;
+        max-width: 1700px;
+        min-height: 100vh;
+        background-color: rgb(172, 157, 139);
     }
 
     .home_but
@@ -317,8 +438,119 @@ body {
         border-radius: 5px; /* zaokrąglenie narożników */
         text-decoration: none; /* usunięcie domyślnego podkreślenia linku */
         background-color: rgb(40, 128, 98);
+        z-index: 9999;
     }
     
+    /* ###########1####### */
+    .image-container1 {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    
+    #myImage1 {
+        width: 100%;
+        height: auto;
+        transition: filter 0.3s;
+    }
+    
+    #clickCounter1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        font-size: 150%;
+    }
+
+/* ###########2####### */
+    .image-container2 {
+        border-radius: 10px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    #myImage2 {
+        width: 100%;
+        height: auto;
+        transition: filter 0.3s;
+    }
+    
+    #clickCounter2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        font-size: 150%;
+    }
+
+    /* ###########3####### */
+
+    .image-container3 {
+        border-radius: 10px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 2%;
+    }
+    
+    #myImage3 {
+        width: 100%;
+        height: auto;
+        transition: filter 0.3s;
+    }
+    
+    #clickCounter3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        font-size: 150%;
+    }
+
+
+    .art > h1
+    {
+        transform: skew(4deg, 0); /* Pochylenie o 4 stopnie */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        margin-left: center;
+        margin-right: center;
+        text-align: center;
+        font-size: 400%;
+    }
+
+    .art > p
+    {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-family: 'Josefin Sans', sans-serif;
+        margin-left: center;
+        margin-right: center;
+        text-align: center;
+        font-size: 300%;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 
 }
 

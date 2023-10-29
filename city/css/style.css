@@ -1,4 +1,5 @@
 body {
+    margin: 0;
     background-color: rgb(187, 176, 160);
     color : white;
     min-height: 100vh;
@@ -20,7 +21,7 @@ body {
 
 /* ################## ustawienie 1 #########################*/
 
-@media (min-width: 300px) and (max-width: 1265px)
+@media (min-width: 10px) and (max-width: 1265px)
 {
 
     nav
@@ -130,6 +131,7 @@ body {
         text-align: center;
         font-size: 70px;
         font-family: 'Josefin Sans', sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
 
@@ -140,6 +142,7 @@ body {
         text-align: center;
         font-size: 70px;
         font-family: 'Josefin Sans', sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
     .art
@@ -160,6 +163,142 @@ body {
         bottom: 20px; /* odległość od dolnej krawędzi ekranu */
         right: 20px; /* odległość od prawej krawędzi ekranu */
         color: #fff;
+        padding: 10px 20px; /* wewnętrzne marginesy przycisku */
+        border: none;
+        border-radius: 5px; /* zaokrąglenie narożników */
+        text-decoration: none; /* usunięcie domyślnego podkreślenia linku */
+        background-color: rgb(40, 128, 98);
+    }
+
+    .con
+    {
+        width: 100%;
+
+    }
+
+    .spis
+    {
+        margin-left: auto;
+        margin-right: auto;
+        width : 80%;
+    }
+
+    .spis > ol
+    {
+        list-style-type: none;
+        text-align: center;
+        margin-top: 1%;
+    }
+    
+    .spis > ol >li
+    {
+        margin-bottom: 2%;
+        font-size: 180%;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing:3px ;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .slajd
+    {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3%;
+        width: 80%;
+        background-color: rgb(187, 176, 160);
+        border: 3px solid rgb(199, 111, 38);
+        border-radius: 5%;
+    }
+    
+    .zdj#his
+    {
+        margin-top: 1%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        height: 300px;
+        background-image: url("back/historia.jpg");
+        background-position: center;
+        background-size: cover;
+        border-radius: 3%;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        border: 1px solid rgb(255, 255, 255);
+    }
+
+    .zdj#mit
+    {
+        margin-top: 1%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: 300px;
+        background-image: url("back/mit.jpg");
+        background-position: center;
+        background-size: cover;
+        border-radius: 6%;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        border: 1px solid rgb(255, 255, 255);
+    }
+
+    .zdj#zob
+    {
+        margin-top: 1%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        height: 300px;
+        background-image: url("back/zobaczyc.jpg");
+        background-position: center;
+        background-size: cover;
+        border-radius: 3%;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        border: 1px solid rgb(255, 255, 255);
+    }
+
+    .zdj#cie
+    {
+        margin-top: 1%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: 300px;
+        background-image: url("back/cie.jpg");
+        background-position: center;
+        background-size: cover;
+        border-radius: 6%;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        border: 1px solid rgb(255, 255, 255);
+    }
+
+    .text
+    {
+        width: 95%;
+        padding: 1%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Josefin Sans', sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-size: 130%;
+    }
+
+    a:link  
+    {
+        color: white;
+    }
+
+    a:visited
+    {
+        color: white;
+    }
+
+    .scrollup
+    {
+        display: none;
+        position: fixed;
+        bottom: 20px; 
+        left: 20px; 
+        color: #fff; 
         padding: 10px 20px; /* wewnętrzne marginesy przycisku */
         border: none;
         border-radius: 5px; /* zaokrąglenie narożników */
@@ -289,6 +428,7 @@ body {
         text-indent: 40px;
         font-family: 'Josefin Sans', sans-serif;
         padding-top: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
     #zegar
@@ -300,15 +440,13 @@ body {
         padding-right: 20px;
         font-family: 'Josefin Sans', sans-serif;
         padding-top: 15px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
     }
 
     .art
     {
         display: grid;
-        grid-template-columns: repeat(2,minmax(0,1fr));
-        grid-template-rows: repeat(2,minmax(0,600px));
-        gap: 5px;
         margin-left: auto;
         margin-right: auto;
         top:0;
@@ -329,7 +467,142 @@ body {
         text-decoration: none; /* usunięcie domyślnego podkreślenia linku */
         background-color: rgb(40, 128, 98);
     }
+
+    .con
+    {
+        width: 100%;
+
+    }
+
+    .spis
+    {
+        margin-left: auto;
+        margin-right: auto;
+        width : 80%;
+    }
+
+    .spis > ol
+    {
+        list-style-type: none;
+        text-align: center;
+        margin-top: 1%;
+    }
     
+    .spis > ol >li
+    {
+        margin-bottom: 2%;
+        font-size: 180%;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing:3px ;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .slajd
+    {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3%;
+        width: 80%;
+        background-color: rgb(187, 176, 160);
+        border: 3px solid rgb(199, 111, 38);
+        border-radius: 5%;
+    }
+    
+    .zdj#his
+    {
+        margin-top: 1%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        height: 500px;
+        background-image: url("back/historia.jpg");
+        background-position: center;
+        background-size: cover;
+        border-radius: 3%;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        border: 1px solid rgb(255, 255, 255);
+    }
+
+    .zdj#mit
+    {
+        margin-top: 1%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: 600px;
+        background-image: url("back/mit.jpg");
+        background-position: center;
+        background-size: cover;
+        border-radius: 6%;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        border: 1px solid rgb(255, 255, 255);
+    }
+
+    .zdj#zob
+    {
+        margin-top: 1%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        height: 500px;
+        background-image: url("back/zobaczyc.jpg");
+        background-position: center;
+        background-size: cover;
+        border-radius: 3%;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        border: 1px solid rgb(255, 255, 255);
+    }
+
+    .zdj#cie
+    {
+        margin-top: 1%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: 600px;
+        background-image: url("back/cie.jpg");
+        background-position: center;
+        background-size: cover;
+        border-radius: 6%;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        border: 1px solid rgb(255, 255, 255);
+    }
+
+    .text
+    {
+        width: 95%;
+        padding: 1%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Josefin Sans', sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-size: 130%;
+    }
+
+    a:link  
+    {
+        color: white;
+    }
+
+    a:visited
+    {
+        color: white;
+    }
+
+    .scrollup
+    {
+        display: none;
+        position: fixed;
+        bottom: 20px; 
+        left: 20px; 
+        color: #fff; 
+        padding: 10px 20px; /* wewnętrzne marginesy przycisku */
+        border: none;
+        border-radius: 5px; /* zaokrąglenie narożników */
+        text-decoration: none; /* usunięcie domyślnego podkreślenia linku */
+        background-color: rgb(40, 128, 98);
+    }
 
 }
 

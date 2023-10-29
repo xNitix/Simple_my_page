@@ -21,7 +21,7 @@ body {
 
 /* ################## ustawienie 1 #########################*/
 
-@media (min-width: 300px) and (max-width: 1265px)
+@media (min-width: 10px) and (max-width: 1265px)
 {
 
     nav
@@ -130,6 +130,7 @@ body {
         text-align: center;
         font-size: 70px;
         font-family: 'Josefin Sans', sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
 
@@ -140,6 +141,7 @@ body {
         text-align: center;
         font-size: 70px;
         font-family: 'Josefin Sans', sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
     .art
@@ -341,6 +343,7 @@ body {
         font-size: 70px;
         text-indent: 40px;
         font-family: 'Josefin Sans', sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         padding-top: 10px;
     }
 
@@ -352,6 +355,7 @@ body {
         font-size: 70px;
         padding-right: 20px;
         font-family: 'Josefin Sans', sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         padding-top: 15px;
 
     }
@@ -381,7 +385,6 @@ body {
         z-index: 9999;
     }
 
-    /* Styl dla mapy */
     .map {
     position: relative;
     margin-left: 5%;
@@ -394,43 +397,45 @@ body {
     {
         margin-left: auto;
         margin-right: auto;
-        width: 100%; /* Rozciągnięcie mapy na szerokość ekranu */
+        width: 100%; 
         height: 100%;
         position: absolute;
     }
 
-      /* Styl dla pinezek */
     .pin {
         position: absolute;
         width: 1.5%;
         height: 2%;
-        background-color: red; /* Kolor pinezki */
-        border-radius: 50%; /* Zaokrąglenie pinezki */
+        background-color: red; 
+        border-radius: 50%;
         cursor: pointer;
     }
   
-      /* Styl dla okienka z filmem */
     .video-popup {
         display: none;
         position: fixed;
         top: 50%; /* Środek ekranu w pionie */
         left: 50%; /* Środek ekranu w poziomie */
         transform: translate(-50%, -50%);
-        max-width: 90%; /* Maksymalna szerokość okienka z filmem */
-        max-height: 90%; /* Maksymalna wysokość okienka z filmem */
-        background-color: white;
-        border: 1px solid #ccc;
+        max-width: 90%; 
+        max-height: 90%; 
+        background-color: rgb(187, 176, 160);
+        border: 3px solid rgb(199, 111, 38);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 3%;
         padding: 10px;
         overflow: auto;
     }
   
-      /* Przycisk zamknięcia dla okienka z filmem */
+
     .close-button {
+        font-family: 'Josefin Sans', sans-serif;
         position: absolute;
         top: 10px;
         right: 10px;
         cursor: pointer;
+        border: 2px solid #ffffff;
+        background-color: rgb(199, 111, 38);
     }
     
 

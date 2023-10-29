@@ -32,3 +32,25 @@ function button() {
       x.style.display = "none";
     }
   }
+
+document.addEventListener('DOMContentLoaded', function () {
+  jQuery(function($)
+  {
+    $.scrollTo(0);
+
+    $('#link1').click(function() {$.scrollTo($('#his'),500);});
+    $('#link2').click(function() {$.scrollTo($('#mit'),500);});
+    $('#link3').click(function() {$.scrollTo($('#zob'),500);});
+    $('#link4').click(function() {$.scrollTo($('#cie'),500);});
+    $('.scrollup').click(function() {$.scrollTo($('body'),1000);});
+
+  });
+
+  $(window).scroll(function()
+  {
+    if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+    else $('.scrollup').fadeOut();
+  }
+  );
+
+});

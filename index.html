@@ -67,11 +67,11 @@
             </button>
             <div id="ukryj-pokaz">
                 <ul class="menu">
-                    <li >My Hobby
+                    <li >My Hobbies
                         <ul>
-                            <li><a href="gym.html">GYM</a></li>
-                            <li><a href="games.html">GRY</a></li>
-                            <li><a href="skills.html">Skille</a></li>
+                            <li><a href="gym.html">Gym</a></li>
+                            <li><a href="games.html">Games</a></li>
+                            <li><a href="skills.html">Skills</a></li>
                         </ul>
                     </li>
 
@@ -96,15 +96,8 @@
                 <div class="text">
                     <h1>Witaj na mojej stronie!</h1>
                     <p>     
-                    Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy
-                                text ever since the 1500s, when an unknown printer took a galley
-                                of type and scrambled it to make a type specimen book. It has
-                                    survived not only five centuries, but also the leap into
-                                    electronic typesetting, remaining
-                                    orem Ipsum has been the industry's standard dummy
-                                text ever since the 1500s, when an unknown printer took a galley
-                                of type and scrambled it to ma   
+                        Mam na imię Norbert, urodzony w 2003 roku, studiuję na wydziale informatyki na renomowanej uczelni AGH w Krakowie. Chciałbym podzielić się z Tobą moją pasją i zainteresowaniami poprzez tę stronę.
+                        Zapraszam Cię do eksploracji mojego świata, a także do podzielenia się swoimi spostrzeżeniami i pomysłami.
                     </p>        
                 </div>
 
@@ -119,7 +112,60 @@
                 </div>
 
                 <div class="form">
-                    <h1>tu kiedys bedzie formularz</h1>
+                    <form action="" method="post" id="opinionForm">
+                        
+                        <div class="dane">
+                            <div class="form-group">
+                                <legend>Imię:</legend>
+                                <label for="imie"></label>
+                                <input type="text" id="imie">
+                            </div>
+                            <div class="form-group">
+                                <legend>Nazwisko:</legend>
+                                <label for="nazwisko"></label>
+                                <input type="text" id="nazwisko">
+                            </div>
+                            <div class="form-group">
+                                <legend>Wiek:</legend>
+                                <label for="wiek"></label>
+                                <input type="number" id="wiek">
+                            </div>
+                        </div>
+
+                        <div class="opcje">
+                        <fieldset>
+                            <legend>Typ wiadomości: </legend>
+                            <div><label><input type="radio" name="opcja" checked>Opinia</label></div>
+                            <div><label><input type="radio" name="opcja">Znalazłeś bug'a? 🦗</label></div>
+                            <div><label><input type="radio" name="opcja">Współpraca</label></div>
+                            <div><label><input type="radio" name="opcja">Inne</label></div>
+                        </fieldset>
+                        </div>
+                        <div class="ss"></div>
+                        <div class="dane">
+                            <div class="email">
+                                <legend>Adres e-mail: </legend>
+                                <label><input type="email" style="Width: 95%"></label>
+                            </div>
+                        </div>
+
+                        <div class="ss"></div>
+
+                        <div class="dane">
+                            <div class="wia">
+                                <div><label for="wi">Wiadomość:</label></div>
+                                <textarea id="wi"  rows="4" cols="80"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="ss"></div>
+
+                        <div class="dane">
+                            <div class="bu">
+                                <input type="submit" value="Wyślij!">
+                            </div>
+                        </div>
+                    </form>
                 </div>
         </div>
 

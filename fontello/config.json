@@ -83,6 +83,12 @@
       "css": "trophy",
       "code": 59396,
       "src": "entypo"
+    },
+    {
+      "uid": "95376bf082bfec6ce06ea1cda7bd7ead",
+      "css": "up-big",
+      "code": 59397,
+      "src": "fontawesome"
     }
   ]
 }

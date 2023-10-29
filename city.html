@@ -6,9 +6,11 @@
     <title>My Page</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <link rel="stylesheet" href="gym/css/style.css" type="text/css" /> <!-- css -->
+    <link rel="stylesheet" href="city/css/style.css" type="text/css" /> <!-- css -->
     <link rel="stylesheet" href="fontello/css/fontello.css" type="text/css" />
-    <script type="text/javascript" src="gym/js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="city/jsq/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="city/js/main.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,600;1,100&family=Lato:wght@400;700&display=swap" rel="stylesheet">
@@ -67,11 +69,11 @@
             </button>
             <div id="ukryj-pokaz">
                 <ul class="menu">
-                    <li >My Hobby
+                    <li >My Hobbies
                         <ul>
-                            <li><a href="gym.html">GYM</a></li>
-                            <li><a href="games.html">GRY</a></li>
-                            <li><a href="skills.html">Skille</a></li>
+                            <li><a href="gym.html">Gym</a></li>
+                            <li><a href="games.html">Games</a></li>
+                            <li><a href="skills.html">Skills</a></li>
                         </ul>
                     </li>
 
@@ -92,6 +94,92 @@
                 <i class="icon-mail"></i>
             </a>
 
+            <a href="#" class="scrollup">
+                <i class="icon-up-big"></i>
+            </a>
+
+            <div class="con">
+                <div class="spis">
+                    <ol>
+                        <li>
+                            <a id="link1" href="#">➳ Historia Krakowa</a>
+                        </li>
+                        <li>
+                           <a id="link2" href="#">➳ Mity i legendy</a>
+                        </li>
+                        <li>
+                            <a id="link3" href="#">➳ Co musisz zobaczyć</a>
+                        </li>
+                        <li>
+                            <a id="link4" href="#">➳ Ciekawoski</a>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="slajd">
+                    <div class="zdj" id="his">
+
+                    </div>
+
+                    <div class="text">
+                        <h1>Historia Krakowa</h1>
+                        <p>Historia Krakowa sięga czasów pradawnych. Według legendy, miasto zostało założone przez księcia Krakusa, który pokonał smoka Wawelskiego, stając się pierwszym władcą Krakowa. Pierwsza wzmianka o Krakowie pochodzi z IX wieku, a w 1257 roku otrzymał on prawa miejskie. To ważna data w historii Krakowa, ponieważ potwierdza jego rolę jako centralnego ośrodka polskiego rozwoju kulturalnego i gospodarczego.</p>
+                        <p>W okresie średniowiecza Kraków był stolicą Polski i siedzibą królów. To właśnie w Krakowie w katedrze na Wawelu koronowano i pochowano wielu królów, a miasto stało się symbolem narodowej dumy. Jednym z najważniejszych wydarzeń w historii Krakowa była fundacja przez króla Kazimierza Wielkiego w XIV wieku Uniwersytetu Jagiellońskiego, który jest jednym z najstarszych uniwersytetów w Europie.</p>
+                        <p>W XVI wieku Kraków przeżywał okres wielkiego rozkwitu artystycznego i kulturalnego, znanego jako "Złoty Wiek" miasta. To wtedy w Krakowie działali tacy znakomici artyści jak Mikołaj Kopernik i Jan Kochanowski. Miasto stało się ważnym ośrodkiem humanizmu i renesansu.</p>
+                        <p>W XVII wieku Kraków doświadczył trudnych czasów, w tym najazdów szwedzkich i wojen z Turcją. Później, w XIX wieku, Kraków stał się częścią Austro-Węgier, aż do odzyskania niepodległości przez Polskę w 1918 roku.</p>
+                        <p>W okresie II wojny światowej Kraków znalazł się pod okupacją niemiecką. Miasto przetrwało wojnę względnie nietknięte, a wiele jego skarbów kulturowych zostało ocalonych dzięki heroizmowi Polaków, w tym słynnej Fabryce Schindlera, która uratowała wielu Żydów.</p>
+                        <p>Dzisiejszy Kraków to miasto o niezwykłej historii i dziedzictwie kulturowym. Zamek na Wawelu, Rynek Główny, Kazimierz (dawna żydowska dzielnica), oraz wiele innych miejsc, świadczą o bogatej historii i dziedzictwie Krakowa. To miasto przyciąga turystów z całego świata, by odkryć jego fascynującą historię i piękno.</p>
+                    </div>
+                </div>
+
+                <div class="slajd">
+                    <div class="zdj" id="mit">
+
+                    </div>
+
+                    <div class="text">
+                        <h1>Mity i legendy</h1>
+                        <p>Mitologia i legendy Krakowa są częścią dziedzictwa kulturowego tego miasta i odzwierciedlają zarówno jego historię, jak i ducha. To fascynujące opowieści, które przypominają nam, że w tajemniczych zakamarkach miasta skrywają się nie tylko zabytki, ale także opowieści, które przetrwały wieki.</p>
+                        <p>Wieże Kościoła Mariackiego: Kościół Mariacki w Krakowie jest znany z pięknych wież, ale istnieje legenda, która mówi, że budownicy, dwaj bracia, rywalizowali o to, kto z nich zbuduje wyższą wieżę. Kiedy młodszy z braci zdał sobie sprawę, że ten drugi go wyprzedza, postanowił go zamordować nożem. W efekcie, obie wieże mają różne wysokości, co jest do dziś widoczne na wieży Kościoła Mariackiego. Morderca gnębiony przez sumienie, wbił noż w swoje serce i rzucił się z jednej z wież. Nóż ten wisi w krakowskich Sukiennicach. </p>
+                        <p>Hejnał z wieży Kościoła Mariackiego: Jednym z najbardziej znanych elementów kulturowych Krakowa jest tradycja grania hejnału z wieży Kościoła Mariackiego na Rynku Głównym. Legenda mówi, że wiele wieków temu, podczas najazdu tatarskiego, w czasie gdy miasto spało, strażnik na wieży zauważył obcych i zaczął grać sygnał ostrzegawczy na trąbce. Tatarzy zdołali zabić strażnika przeszywając jego gardło strzałą, ale nie zdołali zdobyć miasta. Od tego czasu, na znak pamięci o strażniku, hejnał jest co godzinę przerywany w połowie melodii.</p>
+                        <p>Legenda o Smoku Wawelskim: To jedna z najbardziej znanych opowieści o Krakowie. Według legendy, miasto zostało ocalone przez młodego chłopca o imieniu Krakus, który pokonał ogromnego smoka, który pustoszył okolice Wawelu. Dzięki jego odwadze i sprytowi Kraków miał swojego pierwszego władce i dał mu swoje imię.</p>
+                        <p>Legenda o Królowej Wandzie: Królowa Wanda to postać z legendy, która jest symbolem dumy narodowej i odwagi. Według opowieści, Wanda była królową, która odrzuciła zaloty obcego księcia niemieckiego i wybrała wolność i niezależność swojego kraju. Chcąc uratować Kraków i jego mieszkańców wskoczyła do Wisły i utonęła. W miejscu gdzie znaleziono jej ciało, usypano kopiec, zwany dzisiaj kopcem Wandy. </p>
+                        <p>Zaczarowane gołębie: To mit o zasiadającym niegdyś na książęcym tronie Henryku Probusie. Brakowało mu pieniędzy by zrealizować jego marzenie którym było zjednoczenie polskich ziemi i mianowanie się królem. By uzyskać środki, zwrócił się o pomoc do czarownicy, która zamieniła jego rycerzy w gołębie. Ptaki zaczęły wydłubywać kamyczki z kościoła Mariackiego, a gdy te spadały na ziemię, zamieniały się w złote monety. Henry ruszył w podróż do papieża by zrealizować plan o koronacji, jednak po drodze stracił wszystkie pieniądze i nie wrócił nigdy do Krakowa. Gołębie które tak licznie występują w Krakowie, mają być rzycerzami którzy wciąż czekają na powrót księcia.</p>
+                    </div>
+                </div>
+
+                <div class="slajd">
+                    <div class="zdj" id="zob">
+
+                    </div>
+
+                    <div class="text">
+                        <h1>Co zobaczyć w Krakowie?</h1>
+                        <p>Rynek Główny: To jedno z największych i najpiękniejszych rynków w Europie, otoczone kawiarniami, restauracjami i sklepami. Znajduje się na nim wiele zabytkowych budynków, w tym Kościół Mariacki i wieża ratuszowa.</p>
+                        <p>Kościół Mariacki: Ten gotycki kościół słynie z pięknych drewnianych ołtarzy, w tym słynnego ołtarza Wita Stwosza.</p>
+                        <p>Zamek Królewski na Wawelu: To symboliczne centrum władzy polskich królów, pełne pałaców, katedry i muzeów. Warto zwiedzić Wawel, aby poznać historię Polski.</p>
+                        <p>Dzielnica Kazimierz: Była żydowska dzielnica, która obecnie stanowi centrum kulturalne i artystyczne Krakowa. Można tu znaleźć synagogi, kawiarnie i liczne restauracje serwujące żydowskie potrawy.</p>
+                        <p>Planty Krakowskie: To park wokół starego miasta, idealny na spacery i odpoczynek. Znajdują się tu liczne pomniki i rzeźby.</p>
+                        <p>Park Jordana: To obszerny park miejski, idealny na spacery, pikniki i rekreację. Znajduje się tam fontanna, liczne alejki i plac zabaw dla dzieci.</p>
+                    </div>
+                </div>
+
+                <div class="slajd">
+                    <div class="zdj" id="cie">
+
+                    </div>
+
+                    <div class="text">
+                        <h1>Ciekawostki</h1>
+                        <p>Choinka: Co roku w Święta Bożego Narodzenia, na Rynku Głównym, ubierana jest ok 15 metrowa choinka. </p>
+                        <p>Wysokość Wież Mariackich: Wieże Kościoła Mariackiego w Krakowie różnią się wysokością. Wysoka wieża ma 81 metrów, podczas gdy niższa wieża mierzy 69 metrów. Jest to jeden z najbardziej rozpoznawalnych elementów krajobrazu Krakowa.</p>
+                        <p>Jeden z Najstarszych Uniwersytetów: Uniwersytet Jagielloński, założony w 1364 roku, jest jednym z najstarszych uniwersytetów w Europie. Na przestrzeni wieków był znany z wybitnych naukowców i profesorów, w tym Mikołaja Kopernika.</p>
+                        <p>Mury Obronne Starego Miasta: W średniowieczu Kraków otoczony był murami obronnymi, z których zachowały się niektóre fragmenty, takie jak Brama Floriańska i Baszta Sandomierska.</p>
+                        <p>Kraków - Miasto Królów: Kraków przez wieki był stolicą Polski i miejscem koronacji polskich królów. Katedra na Wawelu była miejscem koronacji, a także pochówku wielu królów i królowych.</p>
+                        <p>Planty: Popularne planty otaczające stare miasto powstały w miejscu dawnej fosy</p>
+                        <p>UNESCO: Stare Miasto w Krakowie zostało w 1978 roku wpisane na światową listę UNESCO.</p>
+                    </div>
+                </div>
 
         </div>
 
